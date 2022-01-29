@@ -72,7 +72,7 @@ There are two options to link a label to a specific input:
 I also applied a new method to change the source of an image depending on the screen size:
 
 ```html
-<img id="image" src="" />
+<div id="image"></div>
 ```
 
 ```css
