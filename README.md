@@ -11,10 +11,8 @@ This is a solution to the [Pod request access landing page challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](docs/assets/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Blondeli/pod-request-access-landing-page](https://github.com/Blondeli/pod-request-access-landing-page)
+- Live Site URL: [https://blondeli.github.io/pod-request-access-landing-page/](https://blondeli.github.io/pod-request-access-landing-page/)
 
 ## My process
 
@@ -48,24 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-This is the first project where I used HTML forms. I watched a video on Youtube from Web Dev Simplified to refreshen my knowledge about forms (linked in the "Useful resources" section). In the following, I will highlight some important things about HTML forms:
-
-There are two options to link a label to a specific input:
-
-- The label's "for" attribute needs to have the same name as the input's "id":
-
-```html
-<label for="name">Name</label> <input name="name" id="name" />
-```
-
-- You nest the input inside the label:
-
-```html
-<label>
-  Name
-  <input name="name" />
-</label>
-```
+This is the first project where I used HTML forms.
 
 <br/>
 
@@ -90,20 +71,25 @@ I also applied a new method to change the source of an image depending on the sc
 }
 ```
 
-### Continued development
+<br/>
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In order to change the colors of the svg images, I applied the filter method. It's important that you first set the color to black (add brightness(0) and saturate(100%) at the beginning of the filter), otherwise it won't work.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+```css
+#svg-image {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(11%) saturate(1238%) hue-rotate(
+      187deg
+    )
+    brightness(94%) contrast(91%);
+}
+```
 
 ### Useful resources
 
 - [Learn HTML Forms In 25 Minutes](https://www.youtube.com/watch?v=fNcJuPIZ2WE) - This helped me to refreshen my knowledge about HTML forms.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS Filter Color Converter](https://codepen.io/sosuke/pen/Pjoqqp) - This website converts a hexadecimal color to the corresponding CSS filter that is needed to change the background color of an svg image.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Blondeli](https://www.frontendmentor.io/profile/Blondeli)
+- Linkedin - [Elisabeth Martin](https://www.linkedin.com/in/elisabeth-martin-873773199/)
