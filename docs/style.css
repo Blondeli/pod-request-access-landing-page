@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #54e6af;
+  --background-color: #121725;
+  --white: #ffffff;
+  --paragraph-color: #c2cbe5;
+  --button-background: #2c344b;
+  --placeholder-text: #5a668a;
+}
