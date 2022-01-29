@@ -55,7 +55,7 @@ p {
 }
 
 #main-content {
-  margin: 3.5rem 1.5rem 0 1.5rem;
+  margin: 3.5rem 6.4% 0 6.4%;
   display: flex;
   flex-direction: column;
 }
@@ -132,4 +132,188 @@ h1 #text-highlight {
   font-size: 0.75rem;
   font-weight: bold;
   margin-top: 0.5rem;
+}
+
+#bg-pattern {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  main {
+    text-align: left;
+    height: 85vh;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+
+  p {
+    margin-top: 2rem;
+    margin-right: 30%;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+  }
+
+  #main-bg-img {
+    background-image: url("assets/tablet/image-host.jpg");
+    opacity: 1;
+    width: 64vw;
+    min-height: 85vh;
+    right: 0;
+  }
+
+  #main-logo {
+    margin-top: 3.125rem;
+    left: 5%;
+    position: absolute;
+  }
+
+  #main-content {
+    margin: 0 0 0 5%;
+    background: var(--background-color);
+    width: 84%;
+    padding-top: 4rem;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #partner-logos {
+    margin: 2rem 16% 0 0;
+  }
+
+  #spotify {
+    width: 96px;
+  }
+
+  #apple-podcasts {
+    width: 78px;
+  }
+
+  #google-podcasts {
+    width: 125px;
+  }
+
+  #pocket-casts {
+    width: 129px;
+  }
+
+  #request-form {
+    order: 0;
+  }
+
+  #email-input {
+    margin-bottom: 0;
+    padding: 0.875rem 2rem;
+    margin-top: 2.5rem;
+    width: 67%;
+  }
+
+  #request-button {
+    padding: 0.5rem 1.75rem;
+    width: 26%;
+    margin-left: -27.5%;
+  }
+
+  #error-message {
+    height: 1rem;
+  }
+
+  #bg-pattern {
+    display: inline;
+    position: absolute;
+    bottom: -35px;
+    left: 25px;
+  }
+}
+
+@media (min-width: 650px) {
+  main {
+    text-align: left;
+    height: 85vh;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+
+  p {
+    margin-top: 2rem;
+    margin-right: 30%;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+  }
+
+  #main-bg-img {
+    background-image: url("assets/tablet/image-host.jpg");
+    opacity: 1;
+    width: 64vw;
+    min-height: 85vh;
+    right: 0;
+  }
+
+  #main-logo {
+    margin-top: 3.125rem;
+    left: 5%;
+    position: absolute;
+  }
+
+  #main-content {
+    margin: 0 0 0 5%;
+    background: var(--background-color);
+    width: 84%;
+    padding-top: 4rem;
+    position: absolute;
+    bottom: 0;
+  }
+
+  #partner-logos {
+    margin: 2rem 16% 0 0;
+  }
+
+  #spotify {
+    width: 96px;
+  }
+
+  #apple-podcasts {
+    width: 78px;
+  }
+
+  #google-podcasts {
+    width: 125px;
+  }
+
+  #pocket-casts {
+    width: 129px;
+  }
+
+  #request-form {
+    order: 0;
+  }
+
+  #email-input {
+    margin-bottom: 0;
+    padding: 0.875rem 2rem;
+    margin-top: 2.5rem;
+    width: 67%;
+  }
+
+  #request-button {
+    padding: 0.5rem 1.25rem;
+    width: 26%;
+    margin-left: -27.5%;
+  }
+
+  #error-message {
+    height: 1rem;
+  }
+
+  #bg-pattern {
+    display: inline;
+    position: absolute;
+    bottom: -35px;
+    left: 25px;
+  }
 }

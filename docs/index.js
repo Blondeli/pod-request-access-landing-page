@@ -6,10 +6,10 @@ function displayErrorMessage(event) {
 
   let errorMessage = document.querySelector("#error-message");
 
-  if (!(email.includes("@"))) {
-    errorMessage.innerHTML = "Oops! Please check your email";
-  } else if (email.length === 0) {
+  if (email.length === 0) {
     errorMessage.innerHTML = "Oops! Please add your email";
+  } else if (!(email.includes("@"))){
+    errorMessage.innerHTML = "Oops! Please check your email";
   } else {
     errorMessage.innerHTML = "";
   }
