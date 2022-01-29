@@ -72,6 +72,14 @@ h1 #text-highlight {
   align-items: center;
 }
 
+#spotify,
+#apple-podcasts,
+#google-podcasts,
+#pocket-casts {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(11%) saturate(1238%)
+    hue-rotate(187deg) brightness(94%) contrast(91%);
+}
+
 #spotify {
   width: 56px;
 }
@@ -228,92 +236,49 @@ h1 #text-highlight {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 1300px) {
   main {
-    text-align: left;
-    height: 85vh;
+    height: 70vh;
+    margin-top: 15vh;
   }
 
   h1 {
-    font-size: 2.75rem;
-    line-height: 3rem;
+    font-size: 3.25rem;
+    line-height: 3.875rem;
   }
 
   p {
-    margin-top: 2rem;
-    margin-right: 30%;
-    line-height: 1.75rem;
-    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    margin-right: 38%;
   }
 
   #main-bg-img {
-    background-image: url("assets/tablet/image-host.jpg");
-    opacity: 1;
-    width: 64vw;
-    min-height: 85vh;
-    right: 0;
+    background-image: url("assets/desktop/image-host.jpg");
+    width: 62vw;
+    min-height: 70vh;
   }
 
   #main-logo {
-    margin-top: 3.125rem;
-    left: 5%;
+    margin-top: -27px;
+    left: 11.5%;
     position: absolute;
   }
 
   #main-content {
-    margin: 0 0 0 5%;
+    margin: 0 0 0 11.5%;
     background: var(--background-color);
-    width: 84%;
-    padding-top: 4rem;
-    position: absolute;
-    bottom: 0;
+    width: 50vw;
+    padding-top: 5rem;
   }
 
   #partner-logos {
-    margin: 2rem 16% 0 0;
-  }
-
-  #spotify {
-    width: 96px;
-  }
-
-  #apple-podcasts {
-    width: 78px;
-  }
-
-  #google-podcasts {
-    width: 125px;
-  }
-
-  #pocket-casts {
-    width: 129px;
-  }
-
-  #request-form {
-    order: 0;
-  }
-
-  #email-input {
-    margin-bottom: 0;
-    padding: 0.875rem 2rem;
-    margin-top: 2.5rem;
-    width: 67%;
-  }
-
-  #request-button {
-    padding: 0.5rem 1.25rem;
-    width: 26%;
-    margin-left: -27.5%;
-  }
-
-  #error-message {
-    height: 1rem;
+    margin: 4rem 26% 0 0;
   }
 
   #bg-pattern {
-    display: inline;
-    position: absolute;
-    bottom: -35px;
-    left: 25px;
+    bottom: unset;
+    right: -1px;
+    left: unset;
+    top: 79.5vh;
   }
 }
